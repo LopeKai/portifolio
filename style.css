@@ -6,6 +6,9 @@
     list-style: none;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth; /*scroll-behavior: smooth => comportamento de rolagem: suave. quando eu clicar em um link do menu vai ir pra conhecimento ou projeto ou contato vai ter uma rolagem da pagina*/
+}
 :root {
     --font-primary: 'Baloo Da 2',sans-serif;
     --font-secundary: 'Josefin Slab', sans-serif ;
@@ -24,6 +27,7 @@
     z-index: 100;
     cursor: pointer;
     padding: 0.2rem;
+    z-index: 101;
 }
 .show-menu .hamburguer {
     right: 16rem;
@@ -173,6 +177,7 @@ header {
     height: 100vh;
     background-color: #f5f5f5;
     transition: 500ms ease;
+    z-index:100;
 }
 .show-menu .sidebar{
     right: 0;
@@ -295,6 +300,7 @@ header {
     width: 100%;
 }
 /*----------- Sessão Projetos -----------*/
+
 .projetos {
     display: flex;
     justify-content: space-evenly;
@@ -381,6 +387,7 @@ header {
     height: 2.5rem;
 }
 /*----------- Sessao Contato ----------*/
+
 .sessao-contato {
     width: 100%;
     height: 100vh;
@@ -488,8 +495,8 @@ header {
 }
 .orcamento-wrapper h1 {
     position: absolute;
-    top: -2.5rem;
-    left: 2rem;
+    top: -3rem;
+    left: 20% ;
     background: #FF0099;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #493240, #FF0099);
@@ -528,7 +535,56 @@ header {
     cursor: pointer;
     grid-column: 2;
 }
- 
+/*----------- Footer ---------- */
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+.social-list ul {
+    display: flex;
+}
+.social-list ul li a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+/*---------- Icone seta ---------- */
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #493240, #FF0099);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0,0,0,.9);
+}
+#link-topo:hover {
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #2e1e28, #c70077)
+}
+
 
 
 

@@ -6,3 +6,4 @@
 [0114/232910.244:ERROR:exception_snapshot_win.cc(99)] thread ID 9972 not found in process
 [0115/142303.693:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [0116/001538.307:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[0118/001138.564:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
